@@ -6,6 +6,6 @@ __térjen vissza__ az elemek egész számra kerekített összegével!
 */
 'use strict';
 
-const brutto = (int) => {
-    [int * 1.27].reduce((total,num) => total + Math.round(num));
+const brutto = (array) => {
+    return Math.round(array.map(item => item * 1.27).reduce((previous, current) => previous + current, 0));
 }

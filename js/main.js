@@ -6,14 +6,6 @@
 */
 'use strict';
 
-        const stringArray = ['első', 'második', 'harmadik'];
+const content = ['első', 'második', 'harmadik'];
 
-        const generateList = (stringArray) => {
-            const HTMLTemplate = `<ul>
-                ${stringArray
-                    .map(item => `<li>${item}</li>`)
-                    .join('')}
-                </ul>`;
-        }
-
-        generateList();
+const generateList = (stringArray) => `<ul>${stringArray.map((item) => `<li>${item}</li>`).join('')}</ul>`;
